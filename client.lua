@@ -1,0 +1,6 @@
+RegisterCommand("outfit", function()
+    local playerPed = PlayerPedId()
+    TriggerEvent('skinchanger:getSkin', function(skin)
+        TriggerEvent('skinchanger:loadClothes', skin, skin)
+    end)
+end, false)
